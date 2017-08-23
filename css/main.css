@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('../svgs/background.svg') rgb(30, 130, 112);
+}
+
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  padding: 10px;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #9b9eaf;
+  font-weight: 700;
+  }
+  
+header {
+  padding-top: 10px;
+}
+
+header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+
+
+ header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+
+
+
+
+  header h1 {
+    line-height: 1em;
+  }
+
+main {
+  padding-top: 50px;
+}
+
+
+  main h2 {
+  font-size: 28px;
+}
+
+
+  main ul {
+    padding: 0;
+    margin: 0 5px;
+  }
+
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+    }
+
+      main li svg {
+        margin-bottom: 15px;
+      }
+
+
+      main li span {
+        margin-left: -40px;
+      }
+
+      main li:last-child {
+        margin-right: 0;
+      }
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+
+/******************************************
+              SVG's style
+****************************************/
+
+.logotext {
+  opacity: 0;
+}
+
+.logo {
+  width: 140px;
+  height: 120px;
+}
+
+.text {
+ opacity: 1;
+}
+
+
+.dogimg {
+  width: 170px;
+  height: 170px;
+}
+
+
+/****************************************
+      Change dogs coats color 
+****************************************/
+
+/******Redd Coat color*****/
+
+.red0 {
+  fill:#ff7b1f;
+}
+
+.red1 {
+  fill:rgba(123, 43, 43, 0.83);
+}
+
+.rdnose,
+.rdeyes,
+.rdeyebrow {
+  fill:#562d01;
+}
+
+
+/******Fawn Coat color*****/
+
+
+
+.fawn0 {
+  fill:#eadb7f;
+}
+
+
+.fwnose {
+  fill:#FBFEFF;
+}
+
+.fwear {
+  fill:#bb6502;
+}
+
+.fwmouth {
+  fill:#690325;
+}
+
+.fweyes {
+  fill:#46332c;
+}
+
+.fweyebrow {
+ fill: #a74b4b; 
+}
+
+
+/******Sable Coat color*****/
+
+.sbl0 {
+  fill:#4e3524;
+}
+
+.sblnose {
+  fill:#f5655a;
+}
+
+
+.sbleyes {
+  fill:#bb4c4c;
+}
+
+
+.sbleyebrow {
+  fill:#b02727;
+}
+
+.sblface {
+  fill: #FF9800;
+}
+
+.sblmouth {
+  fill: #fff;
+}
+
+
+
+/******Black and Tan Coat color*****/
+.bt0 {
+  fill: rgb(91, 101, 100);
+}
+
+
+.btface {
+  fill: rgb(51, 156, 146);
+}
+
+
+.btmouth {
+  fill: #FFEB3B;
+}
+
+.bteyebrow {
+  fill: rgb(32, 86, 81);
+}
+
+.bteyes {
+ fill: #673AB7;
+}
+
+.btnose {
+ fill: #2196F3;
+}
+
+/****************************************
+            Menu Icons 
+****************************************/
+
+
+.micon {
+  height: 20px;
+  width: 24px;
+  padding: 0 4px;
+  fill: #9b9eaf;  
+}
+
+.visit {
+  padding: 0;
+}
+
+a  {
+   transition: .9s ease-out;
+   -webkit-transition: .9s ease-out;
+   -moz-transition: .9s ease-out;
+}
+
+a:hover {
+  color: #436c8a; 
+}
+
+
+.micon {
+  transition: transform .7s cubic-bezier(.24,-0.31,0,1.45);
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: .7s;
+  -webkit-transition-timing-function: cubic-bezier(.24,-0.31,0,1.45);
+  -moz-transition: transform .7s cubic-bezier(.24,-0.31,0,1.45);
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+   transform-origin: 50% 50%;
+}
+
+
+a:hover .micon {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+   transform: scale(1.1);
+   fill: rgb(202, 44, 97);
+}
+
+.logo {  
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: .6s;
+  -webkit-transition-timing-function: cubic-bezier(.38,0,.88,2);
+  -webkit-transform-origin: 50% 50%;
+   transform-origin: 50% 50%;
+   transition: transform .7s cubic-bezier(.24,-0.31,0, 2);
+}
+ .logo:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+.text {
+  -webkit-transition-duration: .15s;
+  -webkit-transition-property: opacity;
+  transition-duration: .30s;
+  transition-property: opacity;
+}
+.logo:hover  .text {
+    opacity: 0;
+  }
+
+
+/****************************************
+      Media Querries  
+****************************************/
+
+
+
+
+
+@media  (max-width: 768px) {
+
+   header nav {
+    text-align: center;
+  }
+
+
+  header nav ul li {
+    margin: 30px 80px 0 0;
+ }
+}
+
+
+
+
+@media  (max-width: 425px) {
+    .text {
+     opacity: 0;
+    }
+    
+  
+   .logotext {
+    opacity: 1;
+    text-transform: uppercase;
+    color: #4c2a13;
+    margin: 10px;
+   }
+
+   main li {
+     margin-right: 0;
+  } 
+
+  header nav ul li {
+   margin: 0;
+   padding-right: 4px;
+ }
+ 
+
+ header nav ul {
+  padding-left: 0;
+ }
+}
